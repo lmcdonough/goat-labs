@@ -34,7 +34,7 @@ Welcome to the `goat` tutorial where we'll cover how you can get started with th
 
 ## TBD
 
-## Exploring the Application Structure
+### Exploring the Application Structure
 
 - `src`: This directory *willcontains the Terraform and Kubernetes Code
 - `tests`: This folder for now contains tests for the application
