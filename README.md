@@ -30,9 +30,13 @@ Welcome to the `goat` tutorial where we'll cover how you can get started with th
    pip install -r requirements.txt
    ```
 
+--
+
+## TBD
+
 ## Exploring the Application Structure
 
-- `src`: This directory contains the Terraform and Kubernetes Code
+- `src`: This directory *willcontains the Terraform and Kubernetes Code
 - `tests`: This folder for now contains tests for the application
 
 ## How to Run The Tests
@@ -48,6 +52,10 @@ Welcome to the `goat` tutorial where we'll cover how you can get started with th
    ```bash
    cat coverage/lcov-report/index.html
    ```
+
+## END TBD
+
+--
 
 ## Setting up AWS Credentials
 
