@@ -1,6 +1,6 @@
 # Define the IAM role for the EKS cluster
 resource "aws_iam_role" "eks_role" {
-  name = "eks-role"
+  name               = "eks-role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -30,7 +30,7 @@ resource "aws_iam_role_policy_attachment" "ec2_policy_attachment" {
 
 # Define the IAM role for the Lambda function
 resource "aws_iam_role" "lambda_role" {
-  name = "lambda-role"
+  name               = "lambda-role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -55,7 +55,7 @@ resource "aws_iam_role_policy_attachment" "lambda_policy_attachment" {
 
 # Define the IAM role for the RDS instance
 resource "aws_iam_role" "rds_role" {
-  name = "rds-role"
+  name               = "rds-role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",

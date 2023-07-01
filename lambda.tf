@@ -7,13 +7,13 @@ resource "aws_lambda_function" "my_lambda_function" {
   timeout       = 10
   memory_size   = 128
 
-  filename      = "lambda_function.zip"
+  filename         = "lambda_function.zip"
   source_code_hash = filebase64sha256("lambda_function.zip")
 }
 
 # Define the IAM role for Lambda
 resource "aws_iam_role" "my_lambda_role" {
-  name = "my-lambda-role"
+  name               = "my-lambda-role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",

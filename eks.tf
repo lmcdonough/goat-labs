@@ -1,6 +1,6 @@
 # Define the EKS cluster
-resource "aws_eks_cluster" "my_eks_cluster" {
-  name     = "my-eks-cluster"
+resource "aws_eks_cluster" "my_eks_cluster1" {
+  name     = "my-eks-cluster1"
   role_arn = aws_iam_role.my_eks_role.arn
   vpc_config {
     subnet_ids = [aws_subnet.my_subnet.id]
@@ -9,7 +9,7 @@ resource "aws_eks_cluster" "my_eks_cluster" {
 
 # Define the IAM role for EKS
 resource "aws_iam_role" "my_eks_role" {
-  name = "my-eks-role"
+  name               = "my-eks-role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",

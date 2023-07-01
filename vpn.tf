@@ -13,14 +13,14 @@ resource "aws_vpn_connection" "my_vpn_connection" {
   static_routes_only  = true
 
   tunnel1 {
-    pre_shared_key = var.vpn_pre_shared_key
-    tunnel_inside_cidr = var.vpn_tunnel_inside_cidr1
+    pre_shared_key      = var.vpn_pre_shared_key
+    tunnel_inside_cidr  = var.vpn_tunnel_inside_cidr1
     tunnel_outside_cidr = var.vpn_tunnel_outside_cidr1
   }
 
   tunnel2 {
-    pre_shared_key = var.vpn_pre_shared_key
-    tunnel_inside_cidr = var.vpn_tunnel_inside_cidr2
+    pre_shared_key      = var.vpn_pre_shared_key
+    tunnel_inside_cidr  = var.vpn_tunnel_inside_cidr2
     tunnel_outside_cidr = var.vpn_tunnel_outside_cidr2
   }
 }

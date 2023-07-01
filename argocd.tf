@@ -4,7 +4,6 @@ resource "helm_release" "argocd_app" {
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "argocd"
   version    = "2.14.0"
-}
 
   set {
     name  = "server.service.type"
@@ -465,3 +464,4 @@ resource "helm_release" "argocd_app" {
     name  = "dex.config.connectors[0].config.insecureSkipAvatarURLClaim"
     value = "true"
   }
+}
