@@ -75,4 +75,3 @@ resource "aws_security_group_rule" "my_vpn_security_group_rule" {
   to_port           = 0
   cidr_blocks       = ["0.0.0.0/0"]
 }
-
