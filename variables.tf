@@ -21,3 +21,9 @@ variable "availability_zone" {
   type        = string
   default     = "us-west-2a"
 }
+
+variable "tf_eks_iam_role" {
+  description = "The name of the IAM role for Terraform"
+  type        = string
+  default     = "tf_eks_iam_role_name"
+}

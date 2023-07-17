@@ -61,8 +61,8 @@ resource "aws_eks_cluster" "my_eks_cluster" {
 }
 
 # Define the IAM role
-resource "aws_iam_role" "my_iam_role" {
-  name = var.iam_role_name
+resource "aws_iam_role" "tf_eks_iam_role" {
+  name = var.tf_eks_iam_role_name
 
   assume_role_policy = <<EOF
 {
