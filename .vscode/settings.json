@@ -1,5 +1,16 @@
 {
     "editor.tabCompletion": "on",
     "diffEditor.codeLens": true,
-    "git-blame.gitWebUrl": ""
+    "git-blame.gitWebUrl": "",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.automationProfile.osx": {
+
+    },
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.minimumContrastRatio": 7,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
+    "terminal.integrated.tabStopWidth": 4
 }
