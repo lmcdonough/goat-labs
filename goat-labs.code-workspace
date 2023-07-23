@@ -1,0 +1,33 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../terraform-provider-aws"
+		}
+	],
+    "settings": {
+        "terminal.explorerKind": "integrated",
+        "terminal.integrated.automationProfile.osx": "zsh",
+        "terminal.integrated.cursorStyle": "underline",
+        "terminal.integrated.defaultProfile.osx": null,
+        "terminal.integrated.fontSize": 15,
+        "terminal.integrated.minimumContrastRatio": 7,
+        "terminal.integrated.sendKeybindingsToShell": true,
+        "terminal.integrated.tabStopWidth": 4,
+        "editor.tabCompletion": "on",
+		"diffEditor.codeLens": true,
+		"java.project.sourcePaths": [
+			""
+		],
+		"easycode.promptPrefix.writeUnitTests": "#?tests",
+		"easycode.useActiveViewContext": true,
+		"easycode.codeLens": true,
+		"easycode.promptPrefix.explain": "#?explain",
+		"easycode.promptPrefix.refactorCode": "#?debug",
+	"easycode.promptPrefix.writeCode": "#?write",
+		"easycode.promptPrefix.explainMethodFlow": "#?method",
+		"easycode.promptPrefix.explainFileFlow": "#?summarize"
+    }
+}
