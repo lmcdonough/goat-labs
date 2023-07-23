@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "../terraform-provider-aws"
+			"path": "../terraform_module_repos/vpc"
 		}
 	],
     "settings": {
