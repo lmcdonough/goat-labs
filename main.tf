@@ -4,8 +4,14 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.8.0"
     }
+
+    vpc = {
+      source  = "terraform-aws-modules/vpc/aws"
+      version = "~> 2.0.0"
+    }
   }
 }
+
 
 # Configure the AWS Provider
 provider "aws" {

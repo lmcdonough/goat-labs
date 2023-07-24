@@ -1,7 +1,8 @@
-data "vpc_id" {
+data "vpc_id" "vpc_id_data" {
   depends_on = [module.vpc]
   id         = module.vpc.vpc_id
 }
+
 
 locals {
   # Only create flow log if user selected to create a VPC as well
