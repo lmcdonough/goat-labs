@@ -2,16 +2,14 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.8.0"
+      version = ">= 3.0.0"
     }
-
     vpc = {
-      source  = "terraform-aws-modules/vpc/aws"
-      version = "~> 2.0.0"
+      source  = "hashicorp/vpc"
+      version = ">= 2.0.0"
     }
   }
 }
-
 
 # Configure the AWS Provider
 provider "aws" {
@@ -21,4 +19,5 @@ provider "aws" {
 # import the vpc module
 module "vpc" {
   source = "./modules/vpc"
+
 }
