@@ -129,3 +129,58 @@ variable "eks_cluster_private_subnets" {
   type        = list(string)
   default     = []
 }
+
+variable "vpc_name" {
+  description = "The name of the VPC"
+  type        = string
+  default     = "my-vpc"
+}
+
+variable "vpc_cidr" {
+  description = "The CIDR block for the VPC"
+  type        = string
+  default     = "10.0.0.0/16"
+}
+
+variable "vpc_azs" {
+  description = "The availability zones for the VPC"
+  type        = list(string)
+  default     = ["us-west-2a", "us-west-2b", "us-west-2c"]
+}
+
+variable "vpc_private_subnets" {
+  description = "The private subnets for the VPC"
+  type        = list(string)
+  default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+}
+
+variable "vpc_public_subnets" {
+  description = "The public subnets for the VPC"
+  type        = list(string)
+  default     = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+}
+
+variable "enable_nat_gateway" {
+  description = "Enable NAT gateway for private subnets"
+  type        = bool
+  default     = true
+}
+
+variable "enable_vpn_gateway" {
+  description = "Enable VPN gateway for private subnets"
+  type        = bool
+  default     = false
+}
+
+variable "terraform_tag" {
+  description = "The Terraform tag"
+  type        = string
+  default     = "Terraform"
+}
+
+variable "environment_tag" {
+  description = "The environment tag"
+  type        = string
+  default     = "Development"
+}
+
