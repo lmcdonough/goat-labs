@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "The AWS region"
   type        = string
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 variable "vpc_cidr_block" {
@@ -19,7 +19,7 @@ variable "subnet_cidr_block" {
 variable "availability_zone" {
   description = "The availability zone for the subnet"
   type        = string
-  default     = "us-west-2a"
+  default     = "us-east-1a"
 }
 
 variable "tf_eks_iam_role" {
@@ -79,13 +79,13 @@ variable "flow_log_cloudwatch_log_group_name_prefix" {
 variable "flow_log_cloudwatch_log_group_name_suffix" {
   description = "The name suffix of CloudWatch Log Group for VPC flow logs"
   type        = string
-  default     = ""
+  default     = "tf-vpcaws"
 }
 
 variable "flow_log_cloudwatch_log_group_retention_in_days" {
   description = "The number of days to retain log events in the specified log group for VPC flow logs"
   type        = number
-  default     = null
+  default     = 1
 }
 
 variable "flow_log_cloudwatch_log_group_kms_key_id" {
@@ -121,19 +121,19 @@ variable "enable_highly_available_public_subnets" {
 variable "public_subnet_availability_zones" {
   description = "Availability zones for the highly available public subnets"
   type        = list(string)
-  default     = []
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 
 variable "eks_cluster_private_subnets" {
   description = "Private subnets for the EKS cluster"
   type        = list(string)
-  default     = []
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 
 variable "vpc_name" {
   description = "The name of the VPC"
   type        = string
-  default     = "my-vpc"
+  default     = "tf-vpcaws"
 }
 
 variable "vpc_cidr" {
@@ -145,7 +145,7 @@ variable "vpc_cidr" {
 variable "vpc_azs" {
   description = "The availability zones for the VPC"
   type        = list(string)
-  default     = ["us-west-2a", "us-west-2b", "us-west-2c"]
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 
 variable "vpc_private_subnets" {
@@ -181,6 +181,7 @@ variable "terraform_tag" {
 variable "environment_tag" {
   description = "The environment tag"
   type        = string
-  default     = "Development"
+  default     = "Dev"
 }
+
 
