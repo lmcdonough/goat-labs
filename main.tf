@@ -14,7 +14,7 @@ provider "aws" {
 
 # import the vpc module
 module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
+  source  = "./modules/vpc"
   version = "5.1.0"
 
 }
