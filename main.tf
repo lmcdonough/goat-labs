@@ -14,7 +14,5 @@ provider "aws" {
 
 # import the vpc module
 module "vpc" {
-  source  = "./modules/vpc"
-  version = "5.1.0"
-
+  source = "./modules/vpc"
 }
